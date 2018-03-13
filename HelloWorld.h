@@ -2,6 +2,9 @@
 #define _HELLO_WORLD_
 class HelloWorld {
   public:
-      void hello();
+      void print()
+      {
+        cout<<"Hello World!"<<endl;
+      }
 };
 #endif
