@@ -68,7 +68,7 @@ void Date::previousDay()
 
 void Date::show()
 {
-	cout<<year<<"Äê"<<month<<"ÔÂ" <<day<<"ÈÕ"<<endl;
+	cout<<year<<"Ã„Ãª"<<month<<"Ã”Ã‚" <<day<<"ÃˆÃ•"<<endl;
 }
 
 bool Date::equal(Date other)
