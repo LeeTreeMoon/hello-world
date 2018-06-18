@@ -52,8 +52,8 @@ class Base:public Unit
 			quality_name.push_back("oz"); quality_name.push_back("kg"); quality_name.push_back("mg"); quality_name.push_back("lb");
 			quality_name.push_back("dr");
 			
-			quality_mul.push_back(1); quality_mul.push_back(0.000001); quality_mul.push_back(1.5551738); quality_mul.push_back(50802.3454400);
-			quality_mul.push_back(28.3495231); quality_mul.push_back(0.001); quality_mul.push_back(1000); quality_mul.push_back(453.59237);
+			quality_mul.push_back(1); quality_mul.push_back(1000000); quality_mul.push_back(1.5551738); quality_mul.push_back(50802.3454400);
+			quality_mul.push_back(28.3495231); quality_mul.push_back(1000); quality_mul.push_back(0.001); quality_mul.push_back(453.59237);
 			quality_mul.push_back(1.7718452);
 			
 			//温度 
@@ -162,7 +162,7 @@ class Base:public Unit
 				case 3:
 					it1=now+quality_mul.begin();
 					it2=next+quality_mul.begin();
-					cout<<"换算结果："<<num*(*it2)/(*it1)<<endl<<endl; 
+					cout<<"换算结果："<<num*(*it1)/(*it2)<<endl<<endl; 
 					break;
 					
 				case 4:
@@ -203,7 +203,7 @@ class Mix:public Unit
 			
 			area_mul.push_back(10000); area_mul.push_back(1); area_mul.push_back(0.0001); area_mul.push_back(2589988.1);
 			area_mul.push_back(25.292853); area_mul.push_back(0.09290304); area_mul.push_back(0.00064516); area_mul.push_back(0.83612736);
-			area_mul.push_back(1000000) ; area_mul.push_back(0.000001);
+			area_mul.push_back(0.000001) ; area_mul.push_back(1000000);
 			
 			//功率 
 			power_name.push_back("w"); power_name.push_back("J/s"); power_name.push_back("N.m/s"); 
